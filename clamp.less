@@ -1,0 +1,13 @@
+// Line Clamp Function
+// @lines to set max lines unitl cutoff
+.fdn-line-clamp(@lines) {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @lines;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clamped-text {
+ .fdn-line-clamp(3)
+}
